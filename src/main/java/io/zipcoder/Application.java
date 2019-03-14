@@ -15,7 +15,7 @@ public class Application {
             getPets.println("Sorry, I can't help you since you have no pets.");
         } else {
             PetProcessing.getPetInfo(numberOfPets);
-            getPets.returnPets(PetStorage.createListToPrint());
+            getPets.returnPets(PetStorage.createListToPrint(PetStorage.getPetList()));
 
         }
     }
